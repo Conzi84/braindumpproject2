@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
-import { Montserrat, Open_Sans } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
-const montserrat = Montserrat({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["600", "700"],
-  variable: "--font-montserrat",
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-inter",
 });
 
-const openSans = Open_Sans({
+const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
-  weight: ["300", "400", "600"],
-  variable: "--font-open-sans",
+  weight: ["400", "500", "600"],
+  variable: "--font-jetbrains-mono",
 });
 
 export const metadata: Metadata = {
@@ -27,8 +27,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${montserrat.variable} ${openSans.variable}`}>
-      <body className="bg-concrete-white text-stark-black font-open-sans">
+    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
+      <body className="bg-dark-bg text-dark-text font-inter">
         <Navigation />
         <main className="min-h-screen">{children}</main>
         <Footer />

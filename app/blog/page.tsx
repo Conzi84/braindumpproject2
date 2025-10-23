@@ -6,43 +6,66 @@ export default async function BlogPage() {
   const posts = await getAllPosts('blog');
 
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16">
-      <h1 className="text-5xl font-bold font-heading text-stark-black mb-4">
-        Blog
-      </h1>
-      <p className="text-xl text-brain-dump-gray font-light mb-16">
-        Longer-form thoughts and explorations.
-      </p>
+    <div className="min-h-screen bg-dark-bg">
+      {/* Header */}
+      <div className="max-w-6xl mx-auto px-6 py-16">
+        <div className="flex justify-between items-start mb-12">
+          <div>
+            <h1 className="text-6xl font-bold font-montserrat text-dark-text mb-4">
+              Blog
+            </h1>
+            <p className="text-xl text-dark-text-secondary font-light max-w-2xl">
+              Insights on AI workflows, tools, and productivity techniques that transform how I work.
+            </p>
+          </div>
+          <button className="px-6 py-3 border-2 border-dark-text text-dark-text font-semibold hover:bg-dark-text hover:text-dark-bg transition-colors">
+            ALL POSTS →
+          </button>
+        </div>
 
-      {/* Posts List */}
-      <div className="space-y-12">
-        {posts.length === 0 ? (
-          <p className="text-brain-dump-gray font-light">
-            No posts yet. Check back soon.
-          </p>
-        ) : (
-          posts.map((post) => (
-            <article key={post.slug} className="border-b border-gray-300 pb-12 last:border-0">
-              <Link href={`/blog/${post.slug}`}>
-                <h2 className="text-3xl font-bold font-heading text-stark-black mb-3 hover:text-muted-rust transition-colors">
-                  {post.title}
-                </h2>
-              </Link>
-              <div className="flex gap-4 text-sm text-brain-dump-gray font-light mb-4">
-                <time>{post.date}</time>
-              </div>
-              <p className="text-brain-dump-gray font-light leading-relaxed">
-                {post.excerpt}
+        {/* Blog Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {posts.length === 0 ? (
+            <div className="col-span-full text-center py-16">
+              <p className="text-dark-text-secondary text-lg">
+                No posts yet. Check back soon.
               </p>
+            </div>
+          ) : (
+            posts.map((post) => (
               <Link
+                key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="inline-block mt-4 text-muted-rust font-heading font-semibold hover:underline"
+                className="group bg-dark-surface rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               >
-                Read more →
+                {/* Illustration Placeholder */}
+                <div className="h-48 bg-gradient-to-br from-note-orange via-note-pink to-note-yellow flex items-center justify-center">
+                  <div className="w-24 h-24 bg-dark-bg rounded-full flex items-center justify-center">
+                    <span className="text-4xl">📝</span>
+                  </div>
+                </div>
+                
+                {/* Content */}
+                <div className="p-6">
+                  <h2 className="text-xl font-bold font-montserrat text-dark-text mb-3 group-hover:text-dark-accent transition-colors line-clamp-2">
+                    {post.title}
+                  </h2>
+                  <p className="text-dark-text-secondary font-open-sans text-sm leading-relaxed line-clamp-3 mb-4">
+                    {post.excerpt}
+                  </p>
+                  <div className="flex justify-between items-center">
+                    <time className="text-xs text-dark-text-secondary">
+                      {post.date}
+                    </time>
+                    <span className="text-xs text-dark-accent font-semibold">
+                      Read more →
+                    </span>
+                  </div>
+                </div>
               </Link>
-            </article>
-          ))
-        )}
+            ))
+          )}
+        </div>
       </div>
     </div>
   );

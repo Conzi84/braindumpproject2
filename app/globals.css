@@ -3,23 +3,23 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply bg-dark-bg text-dark-text antialiased;
+  }
+  
   h1 {
-    @apply font-montserrat font-bold text-5xl leading-tight;
+    @apply font-inter font-bold text-5xl leading-tight text-dark-text;
   }
   
   h2 {
-    @apply font-montserrat font-semibold text-4xl leading-tight;
+    @apply font-inter font-semibold text-4xl leading-tight text-dark-text;
   }
   
   h3 {
-    @apply font-montserrat font-semibold text-2xl leading-tight;
+    @apply font-inter font-semibold text-2xl leading-tight text-dark-text;
   }
   
   p {
-    @apply font-open-sans text-base leading-relaxed;
-  }
-  
-  body {
-    @apply antialiased;
+    @apply font-inter text-base leading-relaxed text-dark-text-secondary;
   }
 }

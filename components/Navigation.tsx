@@ -8,33 +8,28 @@ export default function Navigation() {
   const pathname = usePathname();
 
   const links = [
-    { href: '/', label: 'Home' },
-    { href: '/blog', label: 'Blog' },
-    { href: '/garden', label: 'Garden' },
-    { href: '/resources', label: 'Resources' },
-    { href: '/about', label: 'About' },
-    { href: '/contact', label: 'Contact' },
+    { href: '/', label: 'HOME' },
+    { href: '/about', label: 'ABOUT' },
+    { href: '/blog', label: 'BLOG' },
+    { href: '/garden', label: 'GARDEN' },
+    { href: '/resources', label: 'RESOURCES' },
+    { href: '/work', label: 'WORK' },
   ];
 
   return (
-    <nav className="border-b border-gray-300 bg-concrete-white">
+    <nav className="border-b border-dark-surface bg-dark-bg">
       <div className="max-w-6xl mx-auto px-6 py-6">
-        <div className="flex items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="text-2xl font-bold font-heading text-stark-black">
-            Brain Dump
-          </Link>
-
-          {/* Navigation Links */}
+        <div className="flex items-center justify-start">
+          {/* Navigation Links - Left Aligned */}
           <ul className="flex gap-8">
             {links.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={`font-heading font-semibold transition-colors ${
+                  className={`font-montserrat font-semibold transition-colors ${
                     pathname === link.href
-                      ? 'text-muted-rust'
-                      : 'text-stark-black hover:text-muted-rust'
+                      ? 'text-dark-accent'
+                      : 'text-dark-text hover:text-dark-accent'
                   }`}
                 >
                   {link.label}

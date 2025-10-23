@@ -5,40 +5,65 @@ import { getAllPosts } from '@/lib/markdown';
 export default async function GardenPage() {
   const notes = await getAllPosts('garden');
 
-  return (
-    <div className="max-w-6xl mx-auto px-6 py-16">
-      <h1 className="text-5xl font-bold font-heading text-stark-black mb-4">
-        Digital Garden
-      </h1>
-      <p className="text-xl text-brain-dump-gray font-light mb-16">
-        Growing ideas, notes, and evergreen content.
-      </p>
+  // Sticky note colors with proper class mapping
+  const noteColorClasses = [
+    'bg-note-orange', 'bg-note-pink', 'bg-note-yellow', 
+    'bg-note-green', 'bg-note-blue', 'bg-note-purple'
+  ];
 
-      {/* Gallery Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {notes.length === 0 ? (
-          <p className="text-brain-dump-gray font-light col-span-full">
-            No notes yet. The garden is being planted.
-          </p>
-        ) : (
-          notes.map((note) => (
-            <Link
-              key={note.slug}
-              href={`/garden/${note.slug}`}
-              className="group border-2 border-gray-300 p-6 hover:border-muted-rust transition-colors"
-            >
-              <h2 className="text-2xl font-bold font-heading text-stark-black mb-3 group-hover:text-muted-rust transition-colors">
-                {note.title}
-              </h2>
-              <p className="text-brain-dump-gray font-light text-sm mb-4 line-clamp-3">
-                {note.excerpt}
+  return (
+    <div className="min-h-screen bg-dark-bg">
+      {/* Header */}
+      <div className="max-w-6xl mx-auto px-6 py-16">
+        <div className="flex justify-between items-start mb-12">
+          <div>
+            <h1 className="text-6xl font-bold font-montserrat text-dark-text mb-4">
+              Digital Garden
+            </h1>
+            <p className="text-xl text-dark-text-secondary font-light max-w-2xl">
+              This is where my brain leaves breadcrumbs. Notes from books, stray thoughts, podcast moments—basically, the stuff I want to remember.
+            </p>
+          </div>
+          <button className="px-6 py-3 border-2 border-dark-text text-dark-text font-semibold hover:bg-dark-text hover:text-dark-bg transition-colors">
+            MORE NOTES →
+          </button>
+        </div>
+
+        {/* Sticky Notes Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
+          {notes.length === 0 ? (
+            <div className="col-span-full text-center py-16">
+              <p className="text-dark-text-secondary text-lg">
+                No notes yet. The garden is being planted.
               </p>
-              <time className="text-xs text-brain-dump-gray font-light">
-                {note.date}
-              </time>
-            </Link>
-          ))
-        )}
+            </div>
+          ) : (
+            notes.map((note, index) => (
+              <Link
+                key={note.slug}
+                href={`/garden/${note.slug}`}
+                className={`group p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-rotate-1 hover:scale-105 ${noteColorClasses[index % noteColorClasses.length]} text-black`}
+              >
+                <h2 className="text-lg font-bold font-montserrat mb-3 line-clamp-2">
+                  {note.title}
+                </h2>
+                <p className="text-sm font-open-sans mb-4 line-clamp-4 leading-relaxed">
+                  {note.excerpt}
+                </p>
+                <div className="flex justify-between items-center">
+                  {note.category && (
+                    <span className="text-xs font-semibold border border-black px-2 py-1 rounded">
+                      {note.category.toUpperCase()}
+                    </span>
+                  )}
+                  <time className="text-xs font-light">
+                    {note.date}
+                  </time>
+                </div>
+              </Link>
+            ))
+          )}
+        </div>
       </div>
     </div>
   );
