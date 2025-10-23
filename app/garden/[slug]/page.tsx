@@ -36,19 +36,19 @@ export default async function GardenNote({ params }: { params: { slug: string } 
   return (
     <article className="max-w-3xl mx-auto px-6 py-16">
       {/* Header */}
-      <header className="mb-12 border-b-2 border-stark-black pb-8">
+      <header className="mb-12 border-b-2 border-black pb-8">
         <div className="flex items-center gap-4 mb-4">
           {note.category && (
-            <span className="inline-block px-3 py-1 bg-brain-dump-gray text-stark-black font-open-sans font-semibold text-sm">
+            <span className="inline-block px-3 py-1 bg-brainDumpGray text-black font-body font-semibold text-sm">
               {note.category}
             </span>
           )}
         </div>
-        <h1 className="text-5xl font-bold mb-4">
+        <h1 className="font-display font-bold text-5xl mb-4 text-black">
           {note.title}
         </h1>
         {note.date && (
-          <time className="text-deep-slate text-sm">
+          <time className="text-deepSlate font-body text-sm">
             Last updated: {new Date(note.date).toLocaleDateString('en-US', {
               year: 'numeric',
               month: 'long',
@@ -61,20 +61,20 @@ export default async function GardenNote({ params }: { params: { slug: string } 
       {/* Content */}
       <div 
         className="prose prose-lg max-w-none
-          prose-headings:font-montserrat prose-headings:font-semibold
-          prose-p:font-open-sans prose-p:leading-relaxed
-          prose-a:text-muted-rust prose-a:no-underline hover:prose-a:underline
-          prose-strong:font-semibold
-          prose-code:bg-brain-dump-gray prose-code:px-1 prose-code:py-0.5
-          prose-pre:bg-deep-slate prose-pre:text-concrete-white"
+          prose-headings:font-display prose-headings:font-semibold prose-headings:text-black
+          prose-p:font-body prose-p:text-black prose-p:leading-relaxed
+          prose-a:text-mutedRust prose-a:no-underline hover:prose-a:underline
+          prose-strong:text-black prose-strong:font-semibold
+          prose-code:bg-brainDumpGray prose-code:px-1 prose-code:py-0.5
+          prose-pre:bg-deepSlate prose-pre:text-concreteWhite"
         dangerouslySetInnerHTML={{ __html: note.content }}
       />
       
       {/* Back Link */}
-      <div className="mt-16 pt-8 border-t-2 border-stark-black">
+      <div className="mt-16 pt-8 border-t-2 border-black">
         <a 
           href="/garden"
-          className="inline-flex items-center gap-2 font-semibold hover:text-muted-rust transition-colors"
+          className="inline-flex items-center gap-2 font-body font-semibold text-black hover:text-mutedRust transition-colors"
         >
           ← Back to Digital Garden
         </a>
