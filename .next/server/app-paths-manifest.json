@@ -1,7 +1,0 @@
-{
-  "/page": "app/page.js",
-  "/garden/page": "app/garden/page.js",
-  "/blog/[slug]/page": "app/blog/[slug]/page.js",
-  "/garden/[slug]/page": "app/garden/[slug]/page.js",
-  "/blog/page": "app/blog/page.js"
-}

@@ -22,14 +22,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Dark theme colors
+        // Dark theme colors (high contrast)
         'dark-bg': '#0F0F0F',
         'dark-surface': '#1A1A1A',
         'dark-text': '#FFFFFF',
         'dark-text-secondary': '#A1A1AA',
         'dark-accent': '#3B82F6',
+
+        // Light theme colors (high contrast)
+        'light-bg': '#FFFFFF',
+        'light-surface': '#F8F9FA',
+        'light-text': '#1A1A1A',
+        'light-text-secondary': '#6B7280',
+        'light-accent': '#2563EB',
         
-        // Sticky note colors
+        // Sticky note colors (work in both themes)
         'note-orange': '#FED7AA',
         'note-pink': '#FECACA',
         'note-yellow': '#FEF08A',
@@ -37,7 +44,7 @@ const config: Config = {
         'note-blue': '#BFDBFE',
         'note-purple': '#E9D5FF',
         
-        // Highlight colors
+        // Highlight colors (high contrast)
         'highlight-red': '#EF4444',
         'highlight-green': '#10B981',
         'highlight-yellow': '#F59E0B',
@@ -50,8 +57,8 @@ const config: Config = {
         'deep-slate': '#A1A1AA',
       },
       fontFamily: {
-        inter: ['var(--font-inter)', 'sans-serif'],
-        'jetbrains-mono': ['var(--font-jetbrains-mono)', 'monospace'],
+        'ibm-plex-mono': ['var(--font-ibm-plex-mono)', 'monospace'],
+        'ibm-plex-sans': ['var(--font-ibm-plex-sans)', 'sans-serif'],
       },
     },
   },

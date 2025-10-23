@@ -4,22 +4,22 @@
 
 @layer base {
   body {
-    @apply bg-dark-bg text-dark-text antialiased;
+    @apply bg-dark-bg dark:bg-light-bg text-dark-text dark:text-light-text antialiased;
   }
-  
+
   h1 {
-    @apply font-inter font-bold text-5xl leading-tight text-dark-text;
+    @apply font-ibm-plex-mono font-bold text-5xl leading-tight text-dark-text dark:text-light-text;
   }
-  
+
   h2 {
-    @apply font-inter font-semibold text-4xl leading-tight text-dark-text;
+    @apply font-ibm-plex-mono font-semibold text-4xl leading-tight text-dark-text dark:text-light-text;
   }
-  
+
   h3 {
-    @apply font-inter font-semibold text-2xl leading-tight text-dark-text;
+    @apply font-ibm-plex-mono font-semibold text-2xl leading-tight text-dark-text dark:text-light-text;
   }
-  
+
   p {
-    @apply font-inter text-base leading-relaxed text-dark-text-secondary;
+    @apply font-ibm-plex-sans text-base leading-relaxed text-dark-text-secondary dark:text-light-text-secondary;
   }
 }

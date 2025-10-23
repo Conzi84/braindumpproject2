@@ -1,19 +1,20 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import ThemeToggle from "@/components/ThemeToggle";
 
-const inter = Inter({
+const ibmPlexMono = IBM_Plex_Mono({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-inter",
+  variable: "--font-ibm-plex-mono",
 });
 
-const jetbrainsMono = JetBrains_Mono({
+const ibmPlexSans = IBM_Plex_Sans({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-jetbrains-mono",
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-ibm-plex-sans",
 });
 
 export const metadata: Metadata = {
@@ -26,13 +27,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
-      <body className="bg-dark-bg text-dark-text font-inter">
-        <Navigation />
-        <main className="min-h-screen">{children}</main>
-        <Footer />
-      </body>
-    </html>
-  );
+        return (
+          <html lang="en" className={`${ibmPlexMono.variable} ${ibmPlexSans.variable} dark`}>
+            <body className="bg-dark-bg dark:bg-light-bg text-dark-text dark:text-light-text font-ibm-plex-mono">
+              <ThemeToggle />
+              <Navigation />
+              <main className="min-h-screen">{children}</main>
+              <Footer />
+            </body>
+          </html>
+        );
 }
