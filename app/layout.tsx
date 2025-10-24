@@ -29,7 +29,7 @@ export default function RootLayout({
 }) {
         return (
           <html lang="en" className={`${ibmPlexMono.variable} ${ibmPlexSans.variable}`}>
-            <body className="bg-dark-bg dark:bg-light-bg text-dark-text dark:text-light-text font-ibm-plex-mono">
+            <body className="bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text font-ibm-plex-mono">
               <ThemeToggle />
               <Navigation />
               <main className="min-h-screen">{children}</main>
