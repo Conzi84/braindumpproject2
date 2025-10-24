@@ -12,19 +12,19 @@ export default async function GardenPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-dark-bg">
+    <div className="min-h-screen bg-light-bg dark:bg-dark-bg">
       {/* Header */}
       <div className="max-w-6xl mx-auto px-6 py-16">
         <div className="flex justify-between items-start mb-12">
           <div>
-            <h1 className="text-6xl font-bold font-montserrat text-dark-text mb-4">
+            <h1 className="text-6xl font-bold font-montserrat text-light-text dark:text-dark-text mb-4">
               Digital Garden
             </h1>
-            <p className="text-xl text-dark-text-secondary font-light max-w-2xl">
+            <p className="text-xl text-light-text dark:text-light-text-secondary dark:text-dark-text-secondary font-light max-w-2xl">
               This is where my brain leaves breadcrumbs. Notes from books, stray thoughts, podcast moments—basically, the stuff I want to remember.
             </p>
           </div>
-          <button className="px-6 py-3 border-2 border-dark-text text-dark-text font-semibold hover:bg-dark-text hover:text-dark-bg transition-colors">
+          <button className="px-6 py-3 border-2 border-light-text dark:border-dark-text text-light-text dark:text-dark-text font-semibold hover:bg-light-text dark:hover:bg-dark-text hover:text-light-bg dark:hover:text-dark-bg transition-colors">
             MORE NOTES →
           </button>
         </div>
@@ -33,7 +33,7 @@ export default async function GardenPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
           {notes.length === 0 ? (
             <div className="col-span-full text-center py-16">
-              <p className="text-dark-text-secondary text-lg">
+              <p className="text-light-text dark:text-light-text-secondary dark:text-dark-text-secondary text-lg">
                 No notes yet. The garden is being planted.
               </p>
             </div>

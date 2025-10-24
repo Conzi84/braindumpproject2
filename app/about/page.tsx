@@ -1,13 +1,13 @@
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-dark-bg">
+    <div className="min-h-screen bg-light-bg dark:bg-dark-bg">
       <div className="max-w-4xl mx-auto px-6 py-16">
         {/* Header */}
         <div className="mb-16">
-          <h1 className="text-6xl font-bold font-montserrat text-dark-text mb-6">
+          <h1 className="text-6xl font-bold font-montserrat text-light-text dark:text-dark-text mb-6">
             About Constanze
           </h1>
-          <p className="text-xl text-dark-text-secondary font-light leading-relaxed">
+          <p className="text-xl text-light-text dark:text-light-text-secondary dark:text-dark-text-secondary font-light leading-relaxed">
             From veterinary medicine to AI and risk management—a journey of continuous learning and adaptation.
           </p>
         </div>
@@ -16,10 +16,10 @@ export default function AboutPage() {
         <div className="space-y-12">
           {/* Education & Background */}
           <section>
-            <h2 className="text-3xl font-bold font-montserrat text-dark-text mb-6">
+            <h2 className="text-3xl font-bold font-montserrat text-light-text dark:text-dark-text mb-6">
               Education & Early Career
             </h2>
-            <div className="space-y-4 text-dark-text-secondary font-open-sans leading-relaxed">
+            <div className="space-y-4 text-light-text dark:text-light-text-secondary dark:text-dark-text-secondary font-open-sans leading-relaxed">
               <p>
                 I studied <span className="text-highlight-green font-semibold">veterinary medicine</span>, 
                 driven by a passion for animal welfare and scientific discovery. This foundation in 
@@ -35,10 +35,10 @@ export default function AboutPage() {
 
           {/* Zoo Leadership */}
           <section>
-            <h2 className="text-3xl font-bold font-montserrat text-dark-text mb-6">
+            <h2 className="text-3xl font-bold font-montserrat text-light-text dark:text-dark-text mb-6">
               Zoo Leadership (10 Years)
             </h2>
-            <div className="space-y-4 text-dark-text-secondary font-open-sans leading-relaxed">
+            <div className="space-y-4 text-light-text dark:text-light-text-secondary dark:text-dark-text-secondary font-open-sans leading-relaxed">
               <p>
                 Leading a zoo for a decade taught me that <span className="text-highlight-yellow font-semibold">management is about people, not just processes</span>. 
                 Every day brought new challenges: animal welfare, visitor experience, staff coordination, and conservation efforts.
@@ -53,10 +53,10 @@ export default function AboutPage() {
 
           {/* Current Role */}
           <section>
-            <h2 className="text-3xl font-bold font-montserrat text-dark-text mb-6">
+            <h2 className="text-3xl font-bold font-montserrat text-light-text dark:text-dark-text mb-6">
               AI & Risk Management
             </h2>
-            <div className="space-y-4 text-dark-text-secondary font-open-sans leading-relaxed">
+            <div className="space-y-4 text-light-text dark:text-light-text-secondary dark:text-dark-text-secondary font-open-sans leading-relaxed">
               <p>
                 Today, I manage <span className="text-highlight-red font-semibold">AI and Risk</span> at a local company, 
                 where I apply the systematic thinking from veterinary medicine and the leadership skills from zoo management 
@@ -72,10 +72,10 @@ export default function AboutPage() {
 
           {/* Personal Philosophy */}
           <section>
-            <h2 className="text-3xl font-bold font-montserrat text-dark-text mb-6">
+            <h2 className="text-3xl font-bold font-montserrat text-light-text dark:text-dark-text mb-6">
               Building in Public
             </h2>
-            <div className="space-y-4 text-dark-text-secondary font-open-sans leading-relaxed">
+            <div className="space-y-4 text-light-text dark:text-light-text-secondary dark:text-dark-text-secondary font-open-sans leading-relaxed">
               <p>
                 I tend to gather <span className="text-highlight-yellow font-semibold">shiny objects</span>—the next interesting thing 
                 that catches my attention. This curiosity has led me from veterinary medicine to zoo management to AI and risk.
@@ -89,12 +89,12 @@ export default function AboutPage() {
           </section>
 
           {/* Quote */}
-          <section className="bg-dark-surface p-8 rounded-lg">
-            <blockquote className="text-2xl font-light text-dark-text-secondary italic leading-relaxed">
+          <section className="bg-light-surface dark:bg-dark-surface p-8 rounded-lg">
+            <blockquote className="text-2xl font-light text-light-text dark:text-light-text-secondary dark:text-dark-text-secondary italic leading-relaxed">
               "The best leaders are those who can see the forest and the trees—understanding both the big picture 
               and the intricate details that make systems work."
             </blockquote>
-            <cite className="text-sm text-dark-text-secondary mt-4 block">
+            <cite className="text-sm text-light-text dark:text-light-text-secondary dark:text-dark-text-secondary mt-4 block">
               — Constanze, reflecting on leadership across different domains
             </cite>
           </section>
