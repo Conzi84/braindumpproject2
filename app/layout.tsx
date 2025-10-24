@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
         return (
-          <html lang="en" className={`${ibmPlexMono.variable} ${ibmPlexSans.variable} dark`}>
+          <html lang="en" className={`${ibmPlexMono.variable} ${ibmPlexSans.variable}`}>
             <body className="bg-dark-bg dark:bg-light-bg text-dark-text dark:text-light-text font-ibm-plex-mono">
               <ThemeToggle />
               <Navigation />
