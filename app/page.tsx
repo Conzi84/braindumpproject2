@@ -95,9 +95,19 @@ export default async function HomePage() {
               href={`/blog/${post.slug}`}
               className="group bg-light-surface dark:bg-dark-surface rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
             >
-              <div className="h-32 bg-gradient-to-br from-note-orange via-note-pink to-note-yellow flex items-center justify-center">
-                <span className="text-3xl">📝</span>
-              </div>
+              {post.thumbnail ? (
+                <div className="h-32 overflow-hidden">
+                  <img 
+                    src={post.thumbnail} 
+                    alt={post.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              ) : (
+                <div className="h-32 bg-gradient-to-br from-note-orange via-note-pink to-note-yellow flex items-center justify-center">
+                  <span className="text-3xl">📝</span>
+                </div>
+              )}
               <div className="p-4">
                 <h3 className="text-lg font-semibold font-ibm-plex-mono text-light-text dark:text-dark-text mb-2 group-hover:text-light-accent dark:group-hover:text-dark-accent transition-colors line-clamp-2">
                   {post.title}

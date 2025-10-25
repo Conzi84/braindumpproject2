@@ -12,6 +12,7 @@ export interface Post {
   date?: string;
   excerpt?: string;
   category?: string;
+  thumbnail?: string;
   content: string;
 }
 
@@ -116,6 +117,7 @@ export async function getPostBySlug(
     date: matterResult.data.date || null,
     excerpt: matterResult.data.excerpt || null,
     category: matterResult.data.category || null,
+    thumbnail: matterResult.data.thumbnail || null,
     content: contentHtml,
   };
 }

@@ -38,12 +38,22 @@ export default async function BlogPage() {
                 href={`/blog/${post.slug}`}
                 className="group bg-light-surface dark:bg-dark-surface rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               >
-                {/* Illustration Placeholder */}
-                <div className="h-48 bg-gradient-to-br from-note-orange via-note-pink to-note-yellow flex items-center justify-center">
-                  <div className="w-24 h-24 bg-light-bg dark:bg-dark-bg rounded-full flex items-center justify-center">
-                    <span className="text-4xl">📝</span>
+                {/* Thumbnail Image */}
+                {post.thumbnail ? (
+                  <div className="h-48 overflow-hidden">
+                    <img 
+                      src={post.thumbnail} 
+                      alt={post.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
                   </div>
-                </div>
+                ) : (
+                  <div className="h-48 bg-gradient-to-br from-note-orange via-note-pink to-note-yellow flex items-center justify-center">
+                    <div className="w-24 h-24 bg-light-bg dark:bg-dark-bg rounded-full flex items-center justify-center">
+                      <span className="text-4xl">📝</span>
+                    </div>
+                  </div>
+                )}
                 
                 {/* Content */}
                 <div className="p-6">
