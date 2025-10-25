@@ -42,7 +42,7 @@ export default async function GardenPage() {
               <Link
                 key={note.slug}
                 href={`/garden/${note.slug}`}
-                className={`group p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-rotate-1 hover:scale-105 ${noteColorClasses[index % noteColorClasses.length]} text-black`}
+                className={`group p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-rotate-1 hover:scale-105 ${noteColorClasses[index % noteColorClasses.length]} text-black dark:text-black`}
               >
                 <h2 className="text-lg font-bold font-montserrat mb-3 line-clamp-2">
                   {note.title}

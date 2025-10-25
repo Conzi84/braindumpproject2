@@ -13,7 +13,7 @@ export default function Footer() {
             <h3 className="text-xl font-bold font-ibm-plex-mono text-dark-text dark:text-light-text mb-4">
               Brain Dump
             </h3>
-            <p className="text-dark-text-secondary dark:text-light-text-secondary font-ibm-plex-sans font-light">
+            <p className="text-light-text-secondary dark:text-dark-text-secondary font-ibm-plex-sans font-light">
               Thoughts, ideas, and learnings from the journey.
             </p>
           </div>
@@ -25,17 +25,17 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/blog" className="text-dark-text-secondary dark:text-light-text-secondary hover:text-dark-accent dark:hover:text-light-accent transition-colors">
+                <Link href="/blog" className="text-light-text-secondary dark:text-dark-text-secondary hover:text-dark-accent dark:hover:text-light-accent transition-colors">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="/garden" className="text-dark-text-secondary dark:text-light-text-secondary hover:text-dark-accent dark:hover:text-light-accent transition-colors">
+                <Link href="/garden" className="text-light-text-secondary dark:text-dark-text-secondary hover:text-dark-accent dark:hover:text-light-accent transition-colors">
                   Digital Garden
                 </Link>
               </li>
               <li>
-                <Link href="/resources" className="text-dark-text-secondary dark:text-light-text-secondary hover:text-dark-accent dark:hover:text-light-accent transition-colors">
+                <Link href="/resources" className="text-light-text-secondary dark:text-dark-text-secondary hover:text-dark-accent dark:hover:text-light-accent transition-colors">
                   Resources
                 </Link>
               </li>
@@ -49,12 +49,12 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-dark-text-secondary dark:text-light-text-secondary hover:text-dark-accent dark:hover:text-light-accent transition-colors">
+                <Link href="/" className="text-light-text-secondary dark:text-dark-text-secondary hover:text-dark-accent dark:hover:text-light-accent transition-colors">
                   About
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-dark-text-secondary dark:text-light-text-secondary hover:text-dark-accent dark:hover:text-light-accent transition-colors">
+                <Link href="/contact" className="text-light-text-secondary dark:text-dark-text-secondary hover:text-dark-accent dark:hover:text-light-accent transition-colors">
                   Contact
                 </Link>
               </li>
@@ -64,7 +64,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="mt-12 pt-8 border-t border-dark-surface dark:border-light-surface text-center">
-          <p className="text-dark-text-secondary dark:text-light-text-secondary font-ibm-plex-sans font-light text-sm">
+          <p className="text-light-text-secondary dark:text-dark-text-secondary font-ibm-plex-sans font-light text-sm">
             © {currentYear} Brain Dump. All rights reserved.
           </p>
         </div>

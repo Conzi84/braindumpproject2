@@ -27,7 +27,7 @@ const config: Config = {
         'dark-bg': '#0F0F0F',
         'dark-surface': '#1A1A1A',
         'dark-text': '#FFFFFF',
-        'dark-text-secondary': '#A1A1AA',
+        'dark-text-secondary': '#D1D5DB',
         'dark-accent': '#3B82F6',
 
         // Light theme colors (high contrast)
