@@ -1,6 +1,6 @@
 ---
 title: "My AI Workflow: ChatGPT, Claude, Cursor"
-date: "2025-10-20"
+date: "2025-10-22"
 excerpt: "How I use three AI tools for different stages: planning, building, and coding."
 thumbnail: "/images/blog/My-AI-Workflow.png"
 ---
