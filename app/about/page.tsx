@@ -77,7 +77,7 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-light-text dark:text-light-text-secondary dark:text-dark-text-secondary font-open-sans leading-relaxed">
               <p>
-                I tend to gather <span className="text-highlight-yellow font-semibold">shiny objects</span>—the next interesting thing 
+                I love to <span className="text-highlight-yellow font-semibold">learn new things</span>—and I am always curious about the next interesting topic 
                 that catches my attention. This curiosity has led me from veterinary medicine to zoo management to AI and risk.
               </p>
               <p>
