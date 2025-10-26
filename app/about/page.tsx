@@ -22,7 +22,7 @@ export default function AboutPage() {
             <div className="space-y-4 text-light-text dark:text-light-text-secondary dark:text-dark-text-secondary font-open-sans leading-relaxed">
               <p>
                 I studied <span className="text-highlight-green font-semibold">veterinary medicine</span>, 
-                driven by a passion for animal welfare and scientific discovery. This foundation in 
+                driven by a passion for animal welfare, scientific discovery and applied logic. This foundation in 
                 evidence-based medicine and systematic thinking became the cornerstone of my approach to problem-solving.
               </p>
               <p>
@@ -41,12 +41,12 @@ export default function AboutPage() {
             <div className="space-y-4 text-light-text dark:text-light-text-secondary dark:text-dark-text-secondary font-open-sans leading-relaxed">
               <p>
                 Leading a zoo for a decade taught me that <span className="text-highlight-yellow font-semibold">management is about people, not just processes</span>. 
-                Every day brought new challenges: animal welfare, visitor experience, staff coordination, and conservation efforts.
+                Every day brought new challenges: staff coordination, animal welfare, visitor experience and every day was a new problem to solve around the corner.
               </p>
               <p>
                 I learned to balance competing priorities, make decisions with incomplete information, 
-                and lead teams through both routine operations and unexpected crises. The zoo became my 
-                laboratory for understanding complex systems and human behavior.
+                and lead teams through both routine operations and unexpected crises. The zoo became my teacher
+                for understanding complex systems and human behavior.
               </p>
             </div>
           </section>
@@ -59,8 +59,8 @@ export default function AboutPage() {
             <div className="space-y-4 text-light-text dark:text-light-text-secondary dark:text-dark-text-secondary font-open-sans leading-relaxed">
               <p>
                 Today, I manage <span className="text-highlight-red font-semibold">AI and Risk</span> at a local company, 
-                where I apply the systematic thinking from veterinary medicine and the leadership skills from zoo management 
-                to navigate the complexities of artificial intelligence and risk assessment.
+                where I apply the systematic thinking from veterinary medicine and the leadership and finding solutions skills from zoo management 
+                to navigate the complexities of artificial intelligence and risk management.
               </p>
               <p>
                 The transition from animal welfare to AI ethics isn't as different as it might seem—both require 
