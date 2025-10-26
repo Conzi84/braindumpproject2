@@ -53,7 +53,7 @@ export default async function HomePage() {
           <div className="space-y-8">
             <div className="bg-note-yellow p-8 rounded-lg text-black">
               <blockquote className="text-2xl font-light font-ibm-plex-sans italic leading-relaxed mb-4">
-                "I tend to gather <span className="font-semibold">shiny objects</span> or the next interesting thing. Here I am building and writing in public."
+                "I have always been <span className="font-semibold">curious</span> in terms of learning new things or explore the next interesting topic. Here I am building and writing in public."
               </blockquote>
               <cite className="text-sm font-medium font-ibm-plex-mono">
                 — Constanze
