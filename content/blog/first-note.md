@@ -25,7 +25,7 @@ No waiting for perfection. Just publish and iterate.
 ## What's Next
 
 - Document my AI implementation process at work, sharing learning all over the field
-- Share trading journal insights (it got my favorite hobby at 10 am New York time)
-- Build tools that solve my own problems first
+- Share side projects, like the origin idea of why doing "brain dumps" and what it is about
+- Build tools that solve my problems, always knowing, that a spoken word about these processes might help others solve their problems
 
 Let's see where this goes.
