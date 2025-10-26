@@ -2,6 +2,7 @@
 title: "First Brain Dump: Why I'm Building This"
 date: "2025-10-21"
 excerpt: "Starting my journey of documenting everything—AI, trading - maybe, and the chaos of building in public."
+thumbnail: "/images/blog/My-AI-Workflow.png"
 ---
 
 # First Brain Dump: Why I'm Building This
