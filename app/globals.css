@@ -23,3 +23,15 @@
     @apply font-ibm-plex-sans text-base leading-relaxed text-light-text-secondary dark:text-dark-text-secondary;
   }
 }
+
+@layer components {
+  .nav-blur {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  
+  .nav-blur-enhanced {
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+}

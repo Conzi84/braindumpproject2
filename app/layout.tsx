@@ -32,7 +32,7 @@ export default function RootLayout({
             <body className="bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text font-ibm-plex-mono">
               <ThemeToggle />
               <Navigation />
-              <main className="min-h-screen">{children}</main>
+              <main className="min-h-screen pt-20">{children}</main>
               <Footer />
             </body>
           </html>

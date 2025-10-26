@@ -14,7 +14,7 @@ export default async function GardenPage() {
   return (
     <div className="min-h-screen bg-light-bg dark:bg-dark-bg">
       {/* Header */}
-      <div className="max-w-6xl mx-auto px-6 py-16">
+      <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="flex justify-between items-start mb-12">
           <div>
             <h1 className="text-6xl font-bold font-montserrat text-light-text dark:text-dark-text mb-4">
@@ -30,7 +30,7 @@ export default async function GardenPage() {
         </div>
 
         {/* Sticky Notes Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 gap-6">
           {notes.length === 0 ? (
             <div className="col-span-full text-center py-16">
               <p className="text-light-text dark:text-light-text-secondary dark:text-dark-text-secondary text-lg">

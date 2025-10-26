@@ -11,7 +11,7 @@ export default async function HomePage() {
   return (
             <div className="min-h-screen bg-light-bg dark:bg-dark-bg">
       {/* Two-Column Personal Introduction */}
-      <section className="max-w-6xl mx-auto px-6 py-16">
+      <section className="max-w-7xl mx-auto px-4 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Left Column - Personal Facts */}
           <div className="space-y-8">
@@ -76,7 +76,7 @@ export default async function HomePage() {
       </section>
 
       {/* Blog Section Preview */}
-      <section className="max-w-6xl mx-auto px-6 py-16">
+      <section className="max-w-7xl mx-auto px-4 py-16">
         <div className="flex justify-between items-center mb-8">
           <h2 className="text-4xl font-bold font-ibm-plex-mono text-light-text dark:text-dark-text">
             Latest Blog Posts
@@ -88,7 +88,7 @@ export default async function HomePage() {
             View All Posts →
           </Link>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {blogPosts.slice(0, 3).map((post) => (
             <Link
               key={post.slug}
@@ -122,7 +122,7 @@ export default async function HomePage() {
       </section>
 
       {/* Garden Section Preview */}
-      <section className="max-w-6xl mx-auto px-6 py-16">
+      <section className="max-w-7xl mx-auto px-4 py-16">
         <div className="flex justify-between items-center mb-8">
           <h2 className="text-4xl font-bold font-ibm-plex-mono text-light-text dark:text-dark-text">
             Digital Garden
@@ -134,7 +134,7 @@ export default async function HomePage() {
             Explore Garden →
           </Link>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {gardenNotes.slice(0, 4).map((note, index) => {
             const noteColorClasses = [
               'bg-note-orange', 'bg-note-pink', 'bg-note-yellow', 
@@ -159,7 +159,7 @@ export default async function HomePage() {
       </section>
 
       {/* Resources & Work Preview */}
-      <section className="max-w-6xl mx-auto px-6 py-16">
+      <section className="max-w-7xl mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Resources Preview */}
           <div>

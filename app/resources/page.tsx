@@ -1,7 +1,7 @@
 export default function ResourcesPage() {
   return (
     <div className="min-h-screen bg-light-bg dark:bg-dark-bg">
-      <div className="max-w-6xl mx-auto px-6 py-16">
+      <div className="max-w-7xl mx-auto px-4 py-16">
         {/* Header */}
         <div className="mb-16">
           <h1 className="text-6xl font-bold font-montserrat text-light-text dark:text-dark-text mb-6">
@@ -17,7 +17,7 @@ export default function ResourcesPage() {
           <h2 className="text-3xl font-bold font-montserrat text-light-text dark:text-dark-text mb-8">
             AI & Risk Management Tools
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             <div className="bg-light-surface dark:bg-dark-surface p-6 rounded-lg">
               <h3 className="text-xl font-bold font-montserrat text-light-text dark:text-dark-text mb-3">
                 Risk Assessment Frameworks
@@ -105,7 +105,7 @@ export default function ResourcesPage() {
           <h2 className="text-3xl font-bold font-montserrat text-light-text dark:text-dark-text mb-8">
             Learning & Development
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             <div className="bg-light-surface dark:bg-dark-surface p-6 rounded-lg">
               <h3 className="text-xl font-bold font-montserrat text-light-text dark:text-dark-text mb-3">
                 Career Transition

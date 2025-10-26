@@ -1,7 +1,7 @@
 export default function WorkPage() {
   return (
     <div className="min-h-screen bg-light-bg dark:bg-dark-bg">
-      <div className="max-w-6xl mx-auto px-6 py-16">
+      <div className="max-w-7xl mx-auto px-4 py-16">
         {/* Header */}
         <div className="mb-16">
           <h1 className="text-6xl font-bold font-montserrat text-light-text dark:text-dark-text mb-6">
