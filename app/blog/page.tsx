@@ -6,7 +6,7 @@ export default async function BlogPage() {
   const posts = await getAllPosts('blog');
 
   return (
-    <div className="min-h-screen bg-light-bg dark:bg-light-bg dark:bg-dark-bg">
+    <div className="min-h-screen bg-light-bg dark:bg-dark-bg">
       {/* Header */}
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="flex justify-between items-start mb-12">

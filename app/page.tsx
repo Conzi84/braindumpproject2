@@ -76,7 +76,7 @@ export default async function HomePage() {
       </section>
 
       {/* Blog Section Preview */}
-      <section className="max-w-7xl mx-auto px-4 py-16">
+      <section className="max-w-7xl mx-auto px-2 py-16">
         <div className="flex justify-between items-center mb-8">
           <h2 className="text-4xl font-bold font-ibm-plex-mono text-light-text dark:text-dark-text">
             Latest Blog Posts
@@ -88,7 +88,7 @@ export default async function HomePage() {
             View All Posts →
           </Link>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {blogPosts.slice(0, 3).map((post) => (
             <Link
               key={post.slug}
@@ -96,7 +96,7 @@ export default async function HomePage() {
               className="group bg-light-surface dark:bg-dark-surface rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
             >
               {post.thumbnail ? (
-                <div className="h-32 overflow-hidden">
+                <div className="h-64 overflow-hidden">
                   <img 
                     src={post.thumbnail} 
                     alt={post.title}
@@ -104,8 +104,8 @@ export default async function HomePage() {
                   />
                 </div>
               ) : (
-                <div className="h-32 bg-gradient-to-br from-note-orange via-note-pink to-note-yellow flex items-center justify-center">
-                  <span className="text-3xl">📝</span>
+                <div className="h-64 bg-gradient-to-br from-note-orange via-note-pink to-note-yellow flex items-center justify-center">
+                  <span className="text-4xl">📝</span>
                 </div>
               )}
               <div className="p-4">
@@ -122,7 +122,7 @@ export default async function HomePage() {
       </section>
 
       {/* Garden Section Preview */}
-      <section className="max-w-7xl mx-auto px-4 py-16">
+      <section className="max-w-7xl mx-auto px-2 py-16">
         <div className="flex justify-between items-center mb-8">
           <h2 className="text-4xl font-bold font-ibm-plex-mono text-light-text dark:text-dark-text">
             Digital Garden
@@ -134,7 +134,7 @@ export default async function HomePage() {
             Explore Garden →
           </Link>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2 gap-6">
           {gardenNotes.slice(0, 4).map((note, index) => {
             const noteColorClasses = [
               'bg-note-orange', 'bg-note-pink', 'bg-note-yellow', 
@@ -159,7 +159,7 @@ export default async function HomePage() {
       </section>
 
       {/* Resources & Work Preview */}
-      <section className="max-w-7xl mx-auto px-4 py-16">
+      <section className="max-w-7xl mx-auto px-2 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Resources Preview */}
           <div>

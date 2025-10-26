@@ -28,20 +28,20 @@ export default function Navigation() {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+    <nav className={`fixed top-0 left-4 z-50 transition-all duration-300 ${
       isScrolled 
-        ? 'nav-blur-enhanced bg-white/90 dark:bg-black/90 shadow-lg border-b border-gray-200/20 dark:border-gray-800/20' 
-        : 'nav-blur bg-white/80 dark:bg-black/80 border-b border-gray-200/10 dark:border-gray-800/10'
+        ? 'backdrop-blur-lg bg-white/90 dark:bg-dark-bg shadow-lg' 
+        : 'backdrop-blur-md bg-white/80 dark:bg-dark-bg'
     }`}>
-      <div className="max-w-7xl mx-auto px-4 py-4">
+      <div className="px-6 py-4">
         <div className="flex items-center justify-start">
           {/* Navigation Links - Left Aligned */}
-          <ul className="flex gap-4 sm:gap-6 lg:gap-8 overflow-x-auto">
+          <ul className="flex gap-6">
             {links.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={`font-ibm-plex-mono text-xs sm:text-sm uppercase tracking-wider transition-colors duration-200 whitespace-nowrap ${
+                  className={`font-ibm-plex-mono text-sm uppercase tracking-wider transition-colors duration-200 ${
                     pathname === link.href
                       ? 'font-bold text-light-accent dark:text-dark-accent'
                       : 'font-semibold text-light-text dark:text-dark-text hover:text-light-accent dark:hover:text-dark-accent'

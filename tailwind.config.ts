@@ -19,6 +19,9 @@ const config: Config = {
     'line-clamp-2',
     'line-clamp-3',
     'line-clamp-4',
+    // Height utilities for thumbnails
+    'h-64',
+    'text-4xl',
   ],
   theme: {
     extend: {
