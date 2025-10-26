@@ -1,6 +1,6 @@
 ---
 title: "AI Risk Management Overview"
-date: "2025-10-26"
+date: "2025-10-20"
 category: "Governance"
 excerpt: "Understanding the foundations of AI risk management—why it matters, how to build it, and where it fits in modern organizations."
 ---
