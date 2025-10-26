@@ -2,7 +2,7 @@
 title: "First Brain Dump: Why I'm Building This"
 date: "2025-10-21"
 excerpt: "Starting my journey of documenting everything—AI, trading - maybe, and the chaos of building in public."
-thumbnail: "/images/blog/My-AI-Workflow.png"
+thumbnail: "/images/blog/first-brain-dump.png"
 ---
 
 # First Brain Dump: Why I'm Building This
@@ -16,7 +16,7 @@ I work at a local energy provider managing risk and implementing AI systems. Sou
 ## The Problem
 
 My Obsidian vault is full of notes that never see daylight. Insights about AI workflows & ai governance issues, trading patterns, general risk frameworks—all locked in markdown files on my laptop. And even it is not a problem, I have so many interests and been curious about using ai, that I already learned so much, I did not share yet. 
-
+![first brain dump image](/images/blog/first-brain-dump.png)
 ## The Solution
 
 Build in public. One note at a time. This site is the pipeline: Obsidian → GitHub → Netlify. 
