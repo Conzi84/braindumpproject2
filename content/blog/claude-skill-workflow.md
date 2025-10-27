@@ -5,11 +5,11 @@ excerpt: "Tired of juggling transcripts, prompts, and templates? Here’s how I 
 thumbnail: "/images/blog/claude-skill-workflow.png"
 ---
 
-# This Simple Claude Skill Replaced My 5-Step Workflow (and Gave Me My Evenings Back)
+
 
 The following blog post is an idea of making my life easier. It is not implemented yet, just a futureME post. Enjoy reading. 
 
-Every evening, I record a short voice note — just a few minutes of raw thoughts from the day. Wins, worries, ideas, reflections. It’s part of my **Brain Dump Project** — a habit I built to clear my head and end the day intentionally.  
+Every evening, I record a short voice note — just a few minutes of raw thoughts from the day. Wins, worries, ideas, reflections. It's part of my **Brain Dump Project** — a habit I built to clear my head and end the day intentionally.  
 
 But the process that came after? Not so simple.  
 I’d transcribe the note, paste it into ChatGPT, load my saved prompt, open another tab to grab my Markdown template, merge it all, generate my **Daily Sprint Note**, and finally copy it into Obsidian.  
@@ -69,5 +69,5 @@ They bridge the gap between thought and execution, giving your AI the context it
 Productivity isn’t about using more AI tools.  
 It’s about **removing friction** between your thoughts and the tools that bring them to life.  
 
-My simple Claude Skill didn’t just save me time — it brought **simplicity** back to my evening reflection routine.  
+My simple Claude Skill didn't just save me time — it brought **simplicity** back to my evening reflection routine.  
 And that, more than anything, is what technology should do.

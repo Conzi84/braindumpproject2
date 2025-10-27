@@ -5,7 +5,7 @@ excerpt: "Starting my journey of documenting everything—AI, trading - maybe, a
 thumbnail: "/images/blog/first-brain-dump.png"
 ---
 
-# First Brain Dump: Why I'm Building This
+
 
 This is where it starts. No polish, no perfection—just raw thoughts hitting the page.
 

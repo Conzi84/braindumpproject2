@@ -5,7 +5,6 @@ excerpt: "How I use three AI tools for different stages: planning, building, and
 thumbnail: "/images/blog/My-AI-Workflow.png"
 ---
 
-# My AI Workflow: ChatGPT, Claude, Cursor
 
 After months of experimenting, I've settled into a three-tool system that actually works.
 ![My AI Workflow Image](/images/blog/My-AI-Workflow.png)
