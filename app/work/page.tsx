@@ -67,8 +67,8 @@ export default function WorkPage() {
                 staff coordination, and conservation efforts across diverse ecosystems.
               </p>
               <ul className="text-sm space-y-2">
-                <li>• Managed 200+ Staff Members</li>
-                <li>• Oversaw 500+ Animal Species</li>
+                <li>• Managed 20+ Staff Members</li>
+                <li>• Oversaw 400+ Animal in over 40 species</li>
                 <li>• Coordinated Conservation Programs</li>
                 <li>• Handled Crisis Situations</li>
               </ul>
