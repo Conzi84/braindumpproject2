@@ -32,8 +32,8 @@ export default function WorkPage() {
                 </h4>
                 <ul className="text-light-text dark:text-light-text-secondary dark:text-dark-text-secondary space-y-2">
                   <li>• AI Risk Assessment & Mitigation</li>
-                  <li>• Ethical AI Framework Development</li>
-                  <li>• Cross-functional Team Leadership</li>
+                  <li>• AI Framework Development</li>
+                  <li>• Cross-functional Team Project Management</li>
                   <li>• Stakeholder Risk Communication</li>
                 </ul>
               </div>
@@ -43,9 +43,9 @@ export default function WorkPage() {
                 </h4>
                 <ul className="text-light-text dark:text-light-text-secondary dark:text-dark-text-secondary space-y-2">
                   <li>• Developed AI Risk Framework</li>
-                  <li>• Reduced Risk Exposure by 40%</li>
-                  <li>• Led Ethical AI Initiative</li>
-                  <li>• Trained 50+ Team Members</li>
+                  <li>• DSGVO & ISMS Compliance</li>
+                  <li>• Development of Staff AI Training</li>
+                  <li>• AI Governance Framework </li>
                 </ul>
               </div>
             </div>
