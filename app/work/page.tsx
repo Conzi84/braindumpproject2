@@ -141,29 +141,31 @@ export default function WorkPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-light-surface dark:bg-dark-surface p-6 rounded-lg">
               <h3 className="text-xl font-bold font-montserrat text-light-text dark:text-dark-text mb-3">
-                AI Risk Framework
+                AI Implementation Framework (DSGVO & ISMS)
               </h3>
               <p className="text-light-text dark:text-light-text-secondary dark:text-dark-text-secondary font-open-sans leading-relaxed mb-4">
                 Developed comprehensive risk assessment framework for AI implementations, 
-                drawing from medical diagnostic protocols.
+                with most importantly a privacy by design approach.
               </p>
               <span className="text-sm text-light-accent dark:text-dark-accent font-semibold">Current Project</span>
             </div>
 
             <div className="bg-light-surface dark:bg-dark-surface p-6 rounded-lg">
               <h3 className="text-xl font-bold font-montserrat text-light-text dark:text-dark-text mb-3">
-                Zoo Conservation Program
+                Vibe-Coding Projects
               </h3>
               <p className="text-light-text dark:text-light-text-secondary dark:text-dark-text-secondary font-open-sans leading-relaxed mb-4">
-                Led conservation initiatives that increased endangered species breeding success 
-                by 60% over 5 years.
+                Made a Drum Coach App by myself with a vibe-coding app. There are aroung 7-10 projects I made beforehand.
+                For me, the most important one is not yet developed.
               </p>
               <span className="text-sm text-highlight-green font-semibold">Completed</span>
             </div>
 
             <div className="bg-light-surface dark:bg-dark-surface p-6 rounded-lg">
               <h3 className="text-xl font-bold font-montserrat text-light-text dark:text-dark-text mb-3">
-                Ethical AI Guidelines
+                Risk Manager in the beginning of 2025 in order to renew the "old" risk Management Framework in our company. 
+                More than ever the focus lies on preserving the company and its employees. On the other side, taking calculated risks,
+                to MOVE forward.
               </h3>
               <p className="text-light-text dark:text-light-text-secondary dark:text-dark-text-secondary font-open-sans leading-relaxed mb-4">
                 Created ethical guidelines for AI development, applying medical ethics 
