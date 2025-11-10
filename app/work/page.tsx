@@ -156,19 +156,19 @@ export default function WorkPage() {
               </h3>
               <p className="text-light-text dark:text-light-text-secondary dark:text-dark-text-secondary font-open-sans leading-relaxed mb-4">
                 Made a Drum Coach App by myself with a vibe-coding app. There are aroung 7-10 projects I made beforehand.
-                For me, the most important one is not yet developed.
+                For me, the most important one, is the one in progress.
               </p>
               <span className="text-sm text-highlight-green font-semibold">Completed</span>
             </div>
 
             <div className="bg-light-surface dark:bg-dark-surface p-6 rounded-lg">
               <h3 className="text-xl font-bold font-montserrat text-light-text dark:text-dark-text mb-3">
-                Risk Manager 2025
+                Risk Management 2025
               </h3>
               <p className="text-light-text dark:text-light-text-secondary dark:text-dark-text-secondary font-open-sans leading-relaxed mb-4">
-              in the beginning of 2025 in order to renew the "old" risk Management Framework in our company. 
-                More than ever the focus lies on preserving the company and its employees. On the other side, taking calculated risks,
-                to MOVE forward.
+              At the beginning of 2025, we set out to renew our company’s outdated Risk Management Framework. 
+              More than ever, our focus is on safeguarding the organization and its employees — 
+              while at the same time taking calculated risks to move forward and drive progress.
               </p>
               <span className="text-sm text-highlight-yellow font-semibold">Ongoing</span>
             </div>

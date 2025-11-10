@@ -17,7 +17,7 @@ export default function BrainDumpProjectPage() {
 
         <div className="space-y-6 text-light-text-secondary dark:text-dark-text-secondary font-ibm-plex-sans leading-relaxed">
           <p className="text-xl">
-            This is where I document my thoughts, ideas, and learnings in public.
+            The Brain Dump Project is more than a collection of notes — it’s a mental offloading system for high performers who live in constant motion.
           </p>
 
           <div className="bg-light-surface dark:bg-dark-surface p-8 rounded-lg space-y-4">
@@ -25,12 +25,13 @@ export default function BrainDumpProjectPage() {
               What is the Brain Dump Project?
             </h2>
             <p>
-              The Brain Dump Project is my way of building in public—capturing raw thoughts, 
-              turning chaos into structured knowledge, and sharing the journey of continuous learning.
+              It began as my personal evening ritual: a way to empty my mind, release the noise, and translate the flow of thoughts into structured clarity.
             </p>
             <p>
-              From Obsidian notes to public documentation, from AI workflows to risk management 
-              insights, everything starts with a brain dump.
+              The Brain Dump Project is my experiment in building in public — capturing raw voice reflections, turning chaos into structured knowledge, and sharing the journey of continuous learning.
+            </p>
+            <p>
+              From Obsidian notes to AI-driven insights, from daily sprint planning to emotional tracking — everything begins with a brain dump.
             </p>
           </div>
 
@@ -39,10 +40,10 @@ export default function BrainDumpProjectPage() {
               How It Works
             </h2>
             <ul className="space-y-2 list-disc list-inside">
-              <li>Capture raw thoughts and ideas</li>
-              <li>Organize and connect them in Obsidian</li>
-              <li>Refine and publish to this site</li>
-              <li>Build in public, iterate constantly</li>
+              <li>Speak — end the day with a raw voice dump, unfiltered and honest.</li>
+              <li>Capture — transcribe and connect your notes in Obsidian.</li>
+              <li>Reflect — let AI read mood, focus, and productivity signals.</li>
+              <li>Reset — wake up to a plan that aligns with your energy and goals.</li>
             </ul>
           </div>
 
@@ -51,8 +52,15 @@ export default function BrainDumpProjectPage() {
               The Philosophy
             </h2>
             <p className="font-ibm-plex-sans leading-relaxed">
-              No waiting for perfection. Just capture, connect, and share. Every idea starts as a brain dump, 
-              and over time, these fragments evolve into frameworks, insights, or full project plans.
+              The philosophy behind the Brain Dump Project is simple: letting go to move forward.
+              By speaking thoughts out loud at the end of the day, I release mental pressure and create space for recovery, creativity, and deep sleep.
+            </p>
+            <p>
+              The transcribed reflections integrate with my Daily Sprint Note — an AI-assisted planner that understands when I’m in <span className="font-semibold">full power mode</span> and when it’s time for <span className="font-semibold">recovery</span>.
+              This feedback loop between mind, data, and rhythm keeps performance sustainable and grounded.
+            </p>
+            <p>
+              Because sometimes, the smartest thing you can do for tomorrow’s performance — is to let today go.
             </p>
           </div>
         </div>
@@ -60,8 +68,3 @@ export default function BrainDumpProjectPage() {
     </div>
   );
 }
-
-
-
-
-
