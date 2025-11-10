@@ -163,13 +163,12 @@ export default function WorkPage() {
 
             <div className="bg-light-surface dark:bg-dark-surface p-6 rounded-lg">
               <h3 className="text-xl font-bold font-montserrat text-light-text dark:text-dark-text mb-3">
-                Risk Manager in the beginning of 2025 in order to renew the "old" risk Management Framework in our company. 
-                More than ever the focus lies on preserving the company and its employees. On the other side, taking calculated risks,
-                to MOVE forward.
+                Risk Manager 2025
               </h3>
               <p className="text-light-text dark:text-light-text-secondary dark:text-dark-text-secondary font-open-sans leading-relaxed mb-4">
-                Created ethical guidelines for AI development, applying medical ethics 
-                principles to technology contexts.
+              in the beginning of 2025 in order to renew the "old" risk Management Framework in our company. 
+                More than ever the focus lies on preserving the company and its employees. On the other side, taking calculated risks,
+                to MOVE forward.
               </p>
               <span className="text-sm text-highlight-yellow font-semibold">Ongoing</span>
             </div>

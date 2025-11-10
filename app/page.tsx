@@ -2,6 +2,7 @@
 import Link from 'next/link';
 
 import { getAllPosts } from '@/lib/markdown';
+import BrainDumpNetwork from '@/components/BrainDumpNetwork';
 
 export default async function HomePage() {
   // Get latest posts for previews
@@ -73,6 +74,11 @@ export default async function HomePage() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Brain Dump Project Network */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-4 py-8 sm:py-8 mt-16 sm:mt-0">
+        <BrainDumpNetwork />
       </section>
 
       {/* Blog Section Preview */}
